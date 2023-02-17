@@ -17,11 +17,11 @@ int main(void)
 	/*My code below*/
 	printf("%d ", n);
 	if (n > 0)
-		printf("is positive");
+		printf("is positive\n");
 	if (n == 0)
-		printf("is zero");
+		printf("is zero\n");
 	if (n < 0)
-		printf("is negetive");
+		printf("is negative\n");
 
 	return (0);
 }
