@@ -10,8 +10,10 @@ int main(void)
 
 	while(l >= 'a')
 	{
-		print("%c", l);
+		printf("%c", l);
 		l--;
 	}
+	printf("\n");
+
 	return (0);
 }
