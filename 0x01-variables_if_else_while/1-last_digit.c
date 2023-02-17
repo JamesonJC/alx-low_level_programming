@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
 /**
@@ -14,13 +15,13 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 
 	/*My code below*/
-	printf("%d\n", n);
-	if (n > 0)
-		printf("is positive");
-	if (n == 0)
-		printf("is zero");
-	if (n < 0)
-		printf("is negetive");
+	l = n % 10;
+	if (l > 5)
+		printf("Last digit of %d is %d and is greater than 5", n, l);
+	if (l == 0)
+		printf("Last didgit of %d id %d and is ", n, l);
+	if (l < 6)
+		printf("Last digit of %d is %d and is less than 6 and not 0", n, l);
 
 	return (0);
 }

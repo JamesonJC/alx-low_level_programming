@@ -1,4 +1,4 @@
-#include <stdio.h>
+i#include <stdio.h>
 /**
  *main - main begins the program executionn
  *
@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	putchar();
+	printf("0123456789\n");
 	return (0);
 }
