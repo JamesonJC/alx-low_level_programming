@@ -6,10 +6,12 @@
  */
 int main(void)
 {
-	while( '0' <= '9')
+	int x = 48;
+
+	while( x < 58)
 	{
-		putchar('0');
-		'0'++;
+		putchar(x);
+		x++;
 	}
 	return (0);
 }
