@@ -8,7 +8,7 @@ int main(void)
 {
 	char l = 'z';
 
-	while(l >= 'a')
+	while (l >= 'a')
 	{
 		printf("%c", l);
 		l--;
