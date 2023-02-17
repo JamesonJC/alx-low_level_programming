@@ -6,6 +6,6 @@
  */
 int main(void)
 {
-	putchar("0123456789\n");
+	putchar('0123456789\n');
 	return (0);
 }
