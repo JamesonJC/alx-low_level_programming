@@ -6,6 +6,10 @@
  */
 int main(void)
 {
-	putchar('0123456789\n');
+	while( '0' <= '9')
+	{
+		putchar('0');
+		'0'++;
+	}
 	return (0);
 }

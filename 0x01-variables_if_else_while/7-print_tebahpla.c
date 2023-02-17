@@ -6,6 +6,12 @@
  */
 int main(void)
 {
-	putchar();
+	char l = 'z';
+
+	while(l >= 'a')
+	{
+		print("%c", l);
+		l--;
+	}
 	return (0);
 }
