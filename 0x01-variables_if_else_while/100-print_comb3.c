@@ -8,16 +8,17 @@ int main(void)
 {
 	int j;
 	int k;
-	
-	for(j = 48; j <= 56; j++)
+
+	for (j = 48; j <= 56; j++)
 	{
-		for(k = 49; k <= 57; k++)
+		for (k = 49; k <= 57; k++)
 		{
-			if(k > j)
+			if (k > j)
 			{
 				putchar(j);
 				putchar(k);
-				if(j != 56 || k != 57)
+
+				if (j != 56 || k != 57)
 				{
 					putchar(',');
 					putchar(' ');
