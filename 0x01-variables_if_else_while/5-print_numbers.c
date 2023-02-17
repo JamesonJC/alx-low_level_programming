@@ -1,4 +1,4 @@
-i#include <stdio.h>
+#include <stdio.h>
 /**
  *main - main begins the program executionn
  *
@@ -6,6 +6,14 @@ i#include <stdio.h>
  */
 int main(void)
 {
-	printf("0123456789\n");
+	int n = 0;
+
+	while (n <= 9)
+	{
+		printf("%d", n);
+		n++;
+	}
+	printf("\n");
+
 	return (0);
 }
