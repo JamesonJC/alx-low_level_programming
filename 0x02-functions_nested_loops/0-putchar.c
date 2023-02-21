@@ -1,19 +1,20 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* _putchar - Function definition for codes for printing char
+* main - Function main start the program
 *
 * Return: Succesful termination
  */
-void  _putchar(void)
+int main(void)
 {
 	char _putc[] = "_putchar";
 	int i;
 
 	for (i = 0; i < 8; i++)
 	{
-		putchar(_putc[i]);
+		_putchar(_putc[i]);
 	}
 	putchar('\n');
 
+	return (0);
 }
