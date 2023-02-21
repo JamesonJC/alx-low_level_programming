@@ -1,0 +1,3 @@
+THE README FOR PROJECT 0X02 FUNCTIONS, NESTED LOOPS, HEADER FILE...
+
+We are solving probles regarding the above-mensioned concepts.
