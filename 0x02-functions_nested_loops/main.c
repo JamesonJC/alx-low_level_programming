@@ -9,14 +9,14 @@
 */
 int main(void)
 {
-	int r;
-	//_putchar();
+	//int r;
+	_putchar();
 	//print_alphabet();
 	//print_alphabet_x10();
-	r = _islower('H');
-	_putchar(r + 'O');
-	r = _islower('o');
-	_putchar(r + 'O');
+	//r = _islower('H');
+	//_putchar(r + 'O');
+	//r = _islower('o');
+	//_putchar(r + 'O');
 
 	return (0);
 }
