@@ -2,8 +2,8 @@
 
 /**
 * add - The function add two numbers
-* @a: first parameter of function add
-* @b: second parameter of function add
+* @a: first parameter of a function add
+* @b: second parameter of a function add
 * Return: sum of the two integers
 */
 
