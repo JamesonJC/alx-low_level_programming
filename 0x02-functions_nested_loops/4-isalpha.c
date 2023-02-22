@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* isalpha - Function check for  alphabets characte
+*_isalpha - Function check for  alphabets characte
 *@c: The function takes c as an argumentr
 *Return: The function  returns the either 0 or 1
 */
