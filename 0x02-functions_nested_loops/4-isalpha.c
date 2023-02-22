@@ -1,8 +1,9 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* islower - Function check for  alphabets character
-*the function is not void, returns the character
+* isalpha - Function check for  alphabets characte
+*@c: The function takes c as an argumentr
+*Return: The function  returns the either 0 or 1
 */
 
 int _isalpha(int c)
