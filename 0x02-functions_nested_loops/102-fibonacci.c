@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* main - Function start the execution of the program
+* main - Function start the execution of a program
 *
 * Return: Successful termination 
 */
