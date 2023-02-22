@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
 * print_alphabet - Function that holds the code that prints alphabets
 *the funvtion is void,is returns nothing
@@ -12,8 +13,8 @@ void print_alphabet_x10(void)
 	{
 		for (b = 'a'; b <= 'z'; b++)
 		{
-			putchar(b);
+			_putchar(b);
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
