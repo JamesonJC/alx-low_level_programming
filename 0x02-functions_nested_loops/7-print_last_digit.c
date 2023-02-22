@@ -1,4 +1,4 @@
-#nclude "main.h"
+#include "main.h"
 /**
 *print_last_digit - Function find the end digit of a number and print
 *@n: The function takes a single argument int n
