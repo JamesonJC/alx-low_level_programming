@@ -1,7 +1,8 @@
 #include <stdio.h>
 /**
-* islower - Function checks for lowercases and uppercases
-*the funvtion is void,is returns nothing
+* _islower - Function checks for lowercases and uppercases
+*int c - it take the in character c as the single parameter
+*Return: the funtionreturns 1 or 0
 */
 
 int _islower(int c)
