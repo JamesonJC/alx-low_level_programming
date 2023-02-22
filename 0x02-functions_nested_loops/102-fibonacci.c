@@ -4,12 +4,13 @@
 /**
 * main - Function start the execution of a program
 *
-* Return: Successful termination 
+* Return: Successful termination
 */
 
 int main(void)
 {
-	int a, b, sum, tot;
+	long int a, b, sum;
+	int tot;
 
 	a = 1;
 	b = a + 1;
