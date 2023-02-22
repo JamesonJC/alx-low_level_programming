@@ -3,7 +3,7 @@
 
 /**
  * print_to_98 - The function print integer numbers up to 98
- *@n: The function start to print from n
+ *@n: The function start to print from n number
  *Th is void thus return no value nor anything
 */
 
