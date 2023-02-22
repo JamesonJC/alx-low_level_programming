@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* print_alphabet - Function that holds the code that prints alphabets
+* print_alphabet_x10 - Function print a up to z in 10 lines
 *the funvtion is void,is returns nothing
 */
 void print_alphabet_x10(void)
