@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-  *moret_numbers - Function print ten times numbers 0-14
+  *more_numbers - Function print ten times numbers 0-14
   *
   *Return: No return type, void
   */
@@ -14,7 +14,7 @@ void more_numbers(void)
 		{
 			_putchar('m');
 		}
+		_putchar('\n')
 	}
-	_putchar(10);
 }
 
