@@ -2,7 +2,7 @@
 
 /**
 * main -  prints if integer is positive or negative
-* Return: On successful termination 0
+* Return: 0
 */
 
 int main(void)
