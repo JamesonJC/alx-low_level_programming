@@ -18,12 +18,12 @@ int main(void)
 
 	printf("%ld, %ld, ", a, b);
 	for (tot = 2; tot < 50; tot++)
-	{
+	
 		printf("%ld", sum);
 		a = b;
 		b = sum;
 		sum = a + b;
-		if (sum < 50)
+		if (tot < 50)
 		{
 			printf(", ");
 		}
