@@ -8,21 +8,21 @@
 
 void print_square(int size)
 {
-	int pen1, pen2;
+	int pen1;
+	int pen2;
 
-	if (size > 0)
+	while (size > 0  && size > pen1)
 	{
-		for (pen1 = 0; pen1 < size; inc1++)
+		pen2 = 0;
+		while (pen2 < size)
 		{
-			for (pen2 = 0; pen2 < (size - 1); pen2++)
-				_putchar('#');
-
 			_putchar('#');
-			_putchar('\n');
+			pen2++;
 		}
-	}
-	else
-	{
+
 		_putchar('\n');
+		i++;
 	}
+	if (pen1 == 0)
+		_putchar('\n');
 }
