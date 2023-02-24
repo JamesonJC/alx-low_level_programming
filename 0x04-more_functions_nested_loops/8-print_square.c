@@ -11,6 +11,8 @@ void print_square(int size)
 	int pen1;
 	int pen2;
 
+	pen1 = 0;
+
 	while (size > 0  && size > pen1)
 	{
 		pen2 = 0;
