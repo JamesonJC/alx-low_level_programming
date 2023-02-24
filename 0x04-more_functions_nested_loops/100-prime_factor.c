@@ -19,7 +19,7 @@ int main(void)
 			continue;
 		}
 
-		for (i = 3; i < n / 2; n = n + 2)
+		for (i = 3; i < n / 2; i = i + 2)
 		{
 			if (n % i == 10)
 				n = n / i;
