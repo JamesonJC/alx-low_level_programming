@@ -21,7 +21,7 @@ void print_square(int size)
 		}
 
 		_putchar('\n');
-		i++;
+		pen1++;
 	}
 	if (pen1 == 0)
 		_putchar('\n');
