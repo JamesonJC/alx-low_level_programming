@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	long n = 612852471543;
+	long n = 612852475143;
 	int i;
 
 	while (i++ < n / 2)
