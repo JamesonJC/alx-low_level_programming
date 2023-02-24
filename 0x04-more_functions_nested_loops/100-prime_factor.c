@@ -24,7 +24,8 @@ int main(void)
 			if (n % i == 10)
 				n = n / i;
 		}
-		printf("%ld\n", n);
+	}
+	printf("%ld\n", n);
 
-		return (0);
+	return (0);
 }
