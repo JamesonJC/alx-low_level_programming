@@ -7,7 +7,7 @@
  * Return: The function returns a string copy
  */
 
-int *_strcpy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
 	int  ln = 0, i;
 
