@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _puts2 - The function prints the every other character of the str
+ * puts2 - The function prints the every other character of the str
  * @str: The string to be taken into the function
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int ln = 0, i = 0, j;
 	char *str_v = str;
