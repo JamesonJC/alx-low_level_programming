@@ -1,14 +1,26 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- *_puts - The function print the string, and a new line after th str
- *@str: The string taken by the function as the parameter
+ * main - function start the program exexcution
+ *
+ * Return: 0 on success
  */
-void _puts(char *str)
+
+int main(void)
 {
-	while (*str != '\0')
+	int s;
+	char c;
+
+	srand(time(NULL));
+	while (s <= 2645)
 	{
-		-putchar(*str++);
+		c = rand() % 128;
+		s += c;
+		putchar(c);
 	}
-	_putchar('\n');
+	putchar(2772 - s);
+
+	return (0);
 }
