@@ -5,7 +5,7 @@
  * @s: The string taken by the function as the parameter
  *  Return: converted integer
  */
-void _atoi(char *s)
+int _atoi(char *s)
 {
 	int sn = 1;
 	unsigned int n = 0;
