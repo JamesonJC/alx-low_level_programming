@@ -13,7 +13,7 @@ char *leet(char *s)
 	char placed[5] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
-		for (j = 0; j < ln; j++)
+		for (j = 0; j < ln + 1; j++)
 		{
 			if (s[i] == replaced[j] || s[i] - 32 == replaced[j])
 				s[i] = placed[j];
