@@ -9,8 +9,8 @@
 char *leet(char *s)
 {
 	int i, j, ln = 5;
-	char replaced[5] = {'A', 'E', '0', 'T', 'L'};
-	char placed[5] = {'4', '3', '0', '7', 'l'};
+	char replaced[5] = {'A', 'E', 'O', 'T', 'L'};
+	char placed[5] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != '\0'; i++)
 		for (j = 0; j < ln; j++)
