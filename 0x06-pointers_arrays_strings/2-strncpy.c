@@ -3,7 +3,7 @@
 /**
  * _strncpy - a custom strncpy function to copy a string
  * @dest: The first string taken into the function
- * @src: The second string to be taken into the fuction
+ * @src: The second string taken into the function
  * @n: The size of the src memory address
  * Return: dest, a copied string
  */

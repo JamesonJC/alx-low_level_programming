@@ -2,8 +2,8 @@
 
 /**
  * _strncat - a custom strcat function to concatinate two strings
- * @dest: The first dtring taken into the function
- * @src: The second string to be taken into the function
+ * @dest: The first string taken into the function
+ * @src: The second string taken into the function with n length
  * @n: The size of the src memory address
  * Return: dest, a concatinated string
  */
