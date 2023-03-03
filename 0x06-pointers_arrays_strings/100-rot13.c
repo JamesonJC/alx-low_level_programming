@@ -8,7 +8,9 @@
 
 char *rot13(char *s)
 {
-	int i; ln = _strlen(s);
+	int i; ln;
+
+	ln = strlen(s);
 
 	for (i = 0; i < ln; i++)
 	{
