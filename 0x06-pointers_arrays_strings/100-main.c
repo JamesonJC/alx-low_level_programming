@@ -9,7 +9,7 @@
 
 int main(void)
 {
-	char s[] = "ROT13 (\"rotate by 13 places\", sometimeshyphenated ROT-13) is a simpleletter substitution cipher.\n";
+	char s[] = "ROT13 (\"rotate by 13 places\", cipher.\n";
 	char *p;
 
 	p = rot13(s)

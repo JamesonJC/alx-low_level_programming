@@ -2,8 +2,8 @@
 
 /**
  * leet - Function encode string
- *@s: The string to be encoded
- *Return: an Encoded string
+ * @s: The string to be encoded
+ * Return: an Encoded string
  */
 
 char *leet(char *s)
