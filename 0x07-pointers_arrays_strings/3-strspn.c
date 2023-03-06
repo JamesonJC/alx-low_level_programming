@@ -2,29 +2,26 @@
 
 /**
  * _strspn - Calculate the length of a prefix substring
- * @s: String 
+ * @s: String
  * @accept: String prefix
  * Return: The number of bytes of accept string
  */
 
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int bytes = 0;
-	int index;
+	unsigned int ln = 0;
+	int i;
 
-	while (*s)
-	{
-		for (index = 0; accept[index]; index++)
+	for ( ; *s; s++)
+		for (i = 0; accept[i]; i++)
 		{
-			if (*s == accept[index])
+			if (*s == accept[i])
 			{
-				bytes++;
+				ln++;
 				break;
 			}
-			else if (accept[index + 1] == '\0')
-				return (bytes);
+			else if (accept[i + 1] == '\0')
+				return (ln++);
 		}
-		s++;
-	}
-	return (bytes);
+	return (ln);
 }
