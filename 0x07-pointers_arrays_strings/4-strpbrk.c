@@ -1,23 +1,22 @@
-trpbrk - Searches a string for any of a set of bytes.
- * @s: The string to be searched.
-  * @accept: The set of bytes to be searched for.
-   *
-    * Return: If a set is matched - a pointer to the matched byte.
-     * If no set is matched - NULL.
-      */
-      char *_strpbrk(char *s, char *accept)
+#include "main.h"
+
+/**
+ * _strpbrk - string search for any set of bytes
+ * @s: string cointaining set
+ * @accept: string set
+ * Return: pointer to matching bytes, null if not match is found
+ */
+
+char *_strpbrk(char *s, char *accept)
 {
-		int index;
+	int i;
 
-			while (*s)
-					{
-								for (index = 0; accept[index]; index++)
-											{
-															if (*s == accept[index])
-																				return (s);
-																	}
+	for ( ; *s; s++)
+		for (i = 0; accept[i]; i++)
+		{
+			if (*s == accept[i])
+				return (s);
+		}
 
-										s++;
-											}
-				return ('\0');
+	return ('\0');
 }
