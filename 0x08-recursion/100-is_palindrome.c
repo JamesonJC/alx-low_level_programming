@@ -12,7 +12,7 @@ int is_palidrome(char *s)
 	int ln;
 
 	i = 0;
-	ln = _strlen_recursion(*s);
+	ln = _strlen_recursion(s);
 
 	if (!(*s))
 		return (1);
