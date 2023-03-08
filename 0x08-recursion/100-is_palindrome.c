@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * is_palidrome - returns 0 or 1 for palidrome respectively
+ * is_palindrome - returns 0 or 1 for palidrome respectively
  * @s: string input to the function
  * Return: 0  if string is palidrome or 1 if is not.
  */
 
-int is_palidrome(char *s)
+int is_palindrome(char *s)
 {
 	int i;
 	int ln;
@@ -17,11 +17,11 @@ int is_palidrome(char *s)
 	if (!(*s))
 		return (1);
 
-	return (palidrome(s, ln, i));
+	return (_palindrome(s, ln, i));
 }
 
 /**
- * _paliondrome  -  checks for palidrome
+ * _palindrome  -  checks for palidrome
  * @s: string
  * ln: legnth of the string
  * @i: indexing on the string
