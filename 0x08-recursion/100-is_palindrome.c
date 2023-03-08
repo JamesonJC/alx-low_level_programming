@@ -1,15 +1,40 @@
 #include "main.h"
 
 /**
- * is_palidrome - Checks if the string palidrome(empty) or not
+ * is_palidrome - returns 0 or 1 for palidrome respectively
  * @s: string input to the function
  * Return: 0  if string is palidrome or 1 if is not.
  */
 
 int is_palidrome(char *s)
 {
-	if (s != " ")
+	int i;
+	int ln;
+
+	i = 0;
+	ln = _strlen_recursion(*s);
+
+	if (!(*s))
 		return (1);
-	else
-		return (0);
+
+	return (palindrome(s, ln, i));
 }
+
+/**
+ * _paliondrome  -  checks for palidrome
+ * @s: string
+ * ln: legnth of the string
+ * @i: indexing on the string
+ * Return: 0 or 1
+ */
+
+int _palindrome(char *s, int ln, int i)
+{
+
+	if (s[i] == s[ln / 2])
+		return (1);
+	if (s[i] == s[ln - i -1])
+		return (_palindrome(s, ln, i + 1));
+	return (0);
+}
+
