@@ -17,7 +17,7 @@ int is_palidrome(char *s)
 	if (!(*s))
 		return (1);
 
-	return (palindrome(s, ln, i));
+	return (palidrome(s, ln, i));
 }
 
 /**
