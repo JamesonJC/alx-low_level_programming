@@ -8,8 +8,8 @@
 
 int is_palidrome(char *s)
 {
-	if (s == " ")
-		return (0);
-	else
+	if (s != " ")
 		return (1);
+	else
+		return (0);
 }
