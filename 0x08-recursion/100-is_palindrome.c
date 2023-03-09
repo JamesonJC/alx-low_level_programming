@@ -1,5 +1,7 @@
 #include "main.h"
 
+int _palindrome(char *s, int ln, int i);
+
 /**
  * is_palindrome - returns 0 or 1 for palidrome respectively
  * @s: string input to the function
