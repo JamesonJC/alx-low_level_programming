@@ -28,5 +28,5 @@ int _square_root(int n, int i)
 	else if (sq == n)
 		return (i);
 	else
-		return (_sguare_root(n, i + 1));
+		return (_square_root(n, i + 1));
 }
