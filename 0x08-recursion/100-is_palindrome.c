@@ -12,7 +12,7 @@ int _palindrome(char *s, int ln, int i);
 int _strlen(char *s)
 {
 	if (*s == '\0')
-		return 0;
+		return (0);
 	else
 		return (1 + _strlen(s + 1));
 }
@@ -50,8 +50,7 @@ int _palindrome(char *s, int ln, int i)
 
 	if (s[i] == s[ln / 2])
 		return (1);
-	if (s[i] == s[ln - i -1])
+	if (s[i] == s[ln - (i - 1)])
 		return (_palindrome(s, ln, i + 1));
 	return (0);
 }
-
