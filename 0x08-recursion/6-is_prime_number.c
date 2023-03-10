@@ -8,12 +8,12 @@
 
 int is_prime_number(int n)
 {
-	int i = n;
+	int i = n / 2;
 
 	if (n <= 1)
 		return (0);
 
-	return (prime_calc_recur(int n, int i));
+	return (prime_calc_recur(n, i));
 }
 
 /**
@@ -25,7 +25,6 @@ int is_prime_number(int n)
 
 int prime_calc_recur(int n, int i)
 {
-	i = n / 2;
 	if (i <= 1)
 		return (1);
 	if ((n % i) == 0)
