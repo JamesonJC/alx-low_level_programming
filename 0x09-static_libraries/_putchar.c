@@ -7,9 +7,10 @@
   *
   *Return: On success return 1
   *On error, -1 is returned, and error no is set correctly
-  */
+  
 
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+*/

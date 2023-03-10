@@ -3,7 +3,7 @@
 /**
  *_puts - The function print the string, and a new line after th str
  *@str: The string taken by the function as the parameter
- */
+ 
 void _puts(char *str)
 {
 	while (*str != '\0')
@@ -12,3 +12,4 @@ void _puts(char *str)
 	}
 	_putchar('\n');
 }
+*/
