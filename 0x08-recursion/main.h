@@ -13,5 +13,5 @@ int is_palindrome(char *s);
 int wildcmp(char *s1, char *s2);
 
 int _square_root(int n, int i);
-
+int prime_calc_recur(int n, int i);
 #endif
