@@ -50,7 +50,7 @@ int _palindrome(char *s, int ln, int i)
 
 	if (s[i] == s[ln / 2])
 		return (1);
-	if (s[i] == s[ln - (i - 1)])
+	if (s[i] == s[ln - i - 1])
 		return (_palindrome(s, ln, i + 1));
 	return (0);
 }
