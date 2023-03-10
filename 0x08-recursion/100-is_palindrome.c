@@ -40,7 +40,7 @@ int is_palindrome(char *s)
 /**
  * _palindrome  -  checks for palidrome
  * @s: string
- * ln: legnth of the string
+ * @@ln: legnth of the string
  * @i: indexing on the string
  * Return: 0 or 1
  */
