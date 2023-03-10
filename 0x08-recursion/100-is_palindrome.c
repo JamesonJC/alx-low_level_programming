@@ -4,6 +4,20 @@
 int _palindrome(char *s, int ln, int i);
 
 /**
+ * _strlen - calcylate the lenth of the string
+ * @s: sreing
+ * Return: string length value
+ */
+
+int _strlen(char *s)
+{
+	if (*s == '\0')
+		return 0;
+	else
+		return (1 + _strlen(s + 1));
+}
+
+/**
  * is_palindrome - returns 0 or 1 for palidrome respectively
  * @s: string input to the function
  * Return: 0  if string is palidrome or 1 if is not.
@@ -15,7 +29,7 @@ int is_palindrome(char *s)
 	int ln;
 
 	i = 0;
-	ln = _strlen_recursion(s);
+	ln = _strlen(s);
 
 	if (!(*s))
 		return (1);
