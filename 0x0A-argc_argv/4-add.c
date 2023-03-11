@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int addi = 0, i;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		if (numeric(argv[i]) == 0)
 		{
