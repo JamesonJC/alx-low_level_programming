@@ -37,6 +37,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", min_c_change);
-
 	return (0);
 }
