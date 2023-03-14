@@ -6,7 +6,7 @@
 int **alloc_grid(int width, int height)
 {
 	int **_2D_Array;
-	int column, raws;
+	int c, r;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
