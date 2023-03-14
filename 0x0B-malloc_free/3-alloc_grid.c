@@ -5,39 +5,34 @@
 
 int **alloc_grid(int width, int height)
 {
-	int **_2D_Array;
-	int c, r;
+	int **_2daPtr;
+	int c = 0, r = 0;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	_2D_Array =  malloc(sizeof(int *) * (height * width));
+	_2daPtr = malloc(sizeof(int *) * height);
 
-	if (_2D_Array == NULL)
+	if (_2daPtr == NULL)
 		return (NULL);
 
-	for (r = 0; r < height; r++)
-		for (c = 0; c < width; c++)
-			_2D_Array[r][c] = 0;
-
-	return (_2D_Array);
-	
-	/*for (column = 0; column < height; column++)
+	for ( ; c < height; c++)
 	{
-		_2D_Array[column] = malloc (sizeof(int) * width++);
-		if (_2D_Array[column] ==  NULL)
+		_2daPtr[c] = malloc(sizeof(int) * width);
+		if (_2daPtr[c] ==  NULL)
 		{
-			for (; column >= 0; column--)
-				free(_2D_Array[column]);
+			for ( ; c >= 0; c--)
+				free(_2daPtr[c]);
 
-			free (_2D_Array);
+			free(_2daPtr);
 			return (NULL);
 		}
-		for (column = 0; column < width; column++)
-		{
-			for (raws = 0; raws < width; raws++)
-				_2D_Array[column][width] = 0;
-		}
 	}
-	return (_2D_Array);*/
+	for (c = 0; c < width; c++)
+	{
+		for ( ; r < width; r++)
+			_2daPtr[c][r] = 0;
+	}
+
+	return (_2daPtr);
 }
