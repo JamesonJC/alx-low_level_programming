@@ -13,7 +13,7 @@ char *str_concat(char *s1, char *s2)
 {
 	char *sPtr;
 	unsigned long int tot_strln;
-	int i, j;
+	int i, j, k = 0;
 
 	if (s1 == NULL)
 		s1 = "";
@@ -27,10 +27,10 @@ char *str_concat(char *s1, char *s2)
 		return (NULL);
 
 	for (i = 0; s1[i]; i++)
-		sPtr[i] = s1[i];
+		sPtr[k++] = s1[i];
 
 	for (j =0; s2[j]; j++)
-		sPtr[i] = s2[j];
+		sPtr[k++] = s2[j];
 
 	return (sPtr);
 }
