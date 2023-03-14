@@ -13,9 +13,9 @@ char *_strdup(char *str)
 	char *sPtr;
 	unsigned long int i;
 
-	sPtr = (char *) malloc(strlen(str) * sizeof(char));
+	sPtr = (char *) malloc(strlen(str) * sizeof(char) + 1);
 
-	if (sPtr == NULL || str == NULL)
+	if (sPtr == NULL && str == NULL)
 		return (NULL);
 
 	for (i = 0; i < strlen(str); i++)
