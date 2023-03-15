@@ -11,12 +11,15 @@
 char **strtow(char *str)
 {
 	char **sPtr;
-	int i, j, k, numOfWrds;
+	int i, j, k, l, numOfWrds;
 
 	i = 0;
 	numOfWrds = 0;
 	while (str[i])
 	{
+		if (str == NULL || str[0] == '\0')
+			return (NULL);
+
 		if (isalpha(str[i]) && (i == 0 || !isalpha(str[i - 1])))
 			numOfWrds++;
 		i++;
@@ -39,8 +42,15 @@ char **strtow(char *str)
 			}
 
 			sPtr[k] = malloc((j - i + 1) * sizeof(char));
-			if (sPtr[0] == NULL)
+			if (sPtr[k] == NULL)
+			{
+				l = k;
+				for ( ; l >= 0; l--)
+					free(sPtr[k]);
+				free(sPtr);
 				return (NULL);
+			}
+			
 			strncpy(sPtr[k], &str[i], j - i);
 			sPtr[k][j - 1] = '\0';
 			k++;
