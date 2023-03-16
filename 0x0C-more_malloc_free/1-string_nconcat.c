@@ -25,13 +25,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	ln = n;
 	for (k = 0; s1[k]; k++)
 	{
-		ln++;/*
+		ln++;
 		if (n >= strlen(s2))
 		{
 			ln = n;
 			for (k = 0; s2[k]; k++)
 				ln++;
-		}*/
+		}
 	}
 
 	sPtr = malloc(sizeof(char) * (ln + 1));
