@@ -16,7 +16,7 @@ int *array_range(int min, int max)
 	if (min > max)
 		return (NULL);
 
-	aPtr = malloc(sizeof(*aPtr) * (max - min) + 1);
+	aPtr = malloc(sizeof(*aPtr) * ((max - min) + 1));
 
 	if (aPtr == NULL)
 		return (NULL);
@@ -24,9 +24,8 @@ int *array_range(int min, int max)
 	i = 0;
 	while (min <= max)
 	{
-		aPtr[i] = min;
+		aPtr[i] = min++;
 		i++;
-		min++;
 	}
 
 	return (aPtr);
