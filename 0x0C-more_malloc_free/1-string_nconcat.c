@@ -35,7 +35,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; s2[i]; i++)
 		sPtr[j++] = s1[i];
 
-	j++
+	j++;
 	sPtr[j++] = '\0';
 
 	return (sPtr);
