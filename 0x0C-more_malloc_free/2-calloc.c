@@ -11,13 +11,13 @@
 
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *aPtr;
+	char *aPtr;
 	unsigned int i;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
-	aPtr = malloc(nmemb * size + 1);
+	aPtr = malloc(nmemb * size);
 
 	if (aPtr == NULL)
 		return (NULL);
@@ -26,7 +26,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	while (i < (nmemb * size))
 	{
-		aPtr[i] = 0;
+		aPtr[i++] = 0;
 		i++;
 	}
 
