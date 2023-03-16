@@ -3,7 +3,7 @@
 #include "main.h"
 
 /**
- * malloc_checked - allocates memory 
+ * malloc_checked - allocates memory
  * @b: value to be allcated memory for
  * Return: pointer to newly allocated memory
  */
