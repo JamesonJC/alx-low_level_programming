@@ -25,12 +25,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (n >= strlen(s2))
 		n = strlen(s2);
 
-	sPtr = malloc(strlen(s1) + (n + 1));
+	sPtr = malloc(strlen(s1) + n + 1);
 
 	if (!sPtr)
 		return (NULL);
 
-	for (i = 0; i < (strlen(s1) + strlen(s2)); i++)
+	for (i = 0; i < (strlen(s1) + n); i++)
 		if (i < strlen(s1))
 			sPtr[i] = s1[i];
 		else
