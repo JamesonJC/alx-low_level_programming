@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int digi(char *s);
-
-
-/****/
+/**
+ * main - start the execution
+ * @argc: total number of argiments
+ * @argv: argument values
+ * Return: 0 on success, 1 on failure
+ */
 
 int main(int argc, char *argv[])
 {
@@ -21,16 +23,4 @@ int main(int argc, char *argv[])
 	printf("%ld\n", mul);
 
 	return (0);
-}
-
-int digi(char s)
-{
-	int n = s - '0';
-
-	if (n < 0 || n > 9)
-	{
-		fprintf(stderr, "Error\n");
-		exit(98);
-	}
-	return (n);
 }
