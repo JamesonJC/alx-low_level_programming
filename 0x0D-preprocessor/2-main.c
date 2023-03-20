@@ -2,14 +2,12 @@
 
 /**
  * main - program execution begins
- * @argc: Total number of commands arguments
- * @argv: Values of the arguments commands
  * Return: 0 on successs
  */
 
-int main(int argc, char *argv[])
+int main()
 {
-	printf(agrv[argc - argc]);
+	printf("%s\n", __FFILE__);
 
 	return (0);
 }
