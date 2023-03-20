@@ -24,5 +24,8 @@ void print_dog(struct dog *d);
  */
 typedef struct dog dog_t;
 
+/** function prototyping continues*/
+dog_t *new_dog(char *name, float age, char *owner);
+
 #endif
 
