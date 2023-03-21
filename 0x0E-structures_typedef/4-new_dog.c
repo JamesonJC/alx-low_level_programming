@@ -1,5 +1,5 @@
 #include "stdlib.h"
-#include "dog_h"
+#include "dog.h"
 
 /**
  * dog_t *new_dog - A new object of type dog inheriting member types
@@ -12,12 +12,11 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *_2nd_dog;
-	int i, j, k;
 
 	if (!name || !owner)
 		return (NULL);
 
-	_2nd_dog = malloc(sizeof(struct dog_t));
+	_2nd_dog = malloc(sizeof(dog_t));
 
 	if (!(_2nd_dog))
 		return (NULL);
