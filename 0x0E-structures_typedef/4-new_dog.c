@@ -7,6 +7,7 @@
  * @name: Name of the new object
  * @age: Age of the new object
  * @owner: Owner of the object
+ * Return: Pointer new instences of object dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
