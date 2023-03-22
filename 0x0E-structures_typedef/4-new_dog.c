@@ -7,7 +7,7 @@
  * @name: Name of the new object
  * @age: Age of the new object
  * @owner: Owner of the object
- * Return: Pointer new instences of object dog
+ * Return: Pointer new instances of object dog
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -15,9 +15,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *_dogs;
 	int i, lnOfName, lnOfOwner;
 
-	if ((name == NULL) || (owner == NULL))
-		return (NULL);
-
+	/**
+	 *if ((name == NULL) || (owner == NULL))
+	 *	return (NULL);
+	 */
 	_dogs = malloc(sizeof(dog_t));
 
 	if (_dogs == NULL)
@@ -39,7 +40,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	for (lnOfOwner = 0; owner[lnOfOwner]; lnOfOwner++)
 		;
-
 	_dogs->owner = malloc(sizeof(char) * (lnOfOwner++));
 	if (_dogs->owner == NULL)
 	{
