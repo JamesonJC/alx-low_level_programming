@@ -14,20 +14,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	char *s;
 	unsigned int i;
 
-	va_start(string, n);
+	va_start(slstPtr, n);
 
 	for (i = 0; i < n; i++)
 	{
-		s = va_arg(string, char *);
+		s = va_arg(slstPtr, char *);
 
-		if(!s)
-			print("(nil)");
+		if (!s)
+			printf("(nil)");
 		else
-			print("%s", s);
+			printf("%s", s);
 		if (i != (n - 1) && separator)
 			printf("%s", separator);
 	}
 	printf("\n");
 
-	va_end(string);
+	va_end(slstPtr);
 }
