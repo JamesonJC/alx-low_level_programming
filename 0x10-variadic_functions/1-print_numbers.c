@@ -3,7 +3,7 @@
 #include "variadic_functions.h"
 
 /**
- * print_numbers - Output numbers
+ * print_numbers - Output the numbers
  * @separator:n separate the printed numbers
  * @n: Total number of arguments passed
  */
