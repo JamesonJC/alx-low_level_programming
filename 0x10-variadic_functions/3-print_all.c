@@ -23,28 +23,28 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == t_arg[j] && k)
 			{
-				printf(", "), break;
+				printf(", "); break;
 			} j++;
 		}
 		switch (format[i])
 		{
 			case 'c':
 				printf("%c", va_arg(va_list_Ptr, int));
-				k = 1, break;
+				k = 1; break;
 			case 'i':
 				printf("%d", va_arg(va_list_Ptr, int));
-				k = 1, break;
+				k = 1; break;
 			case 'f':
 				printf("%f", va_arg(va_list_Ptr, double));
-				k = 1, break;
+				k = 1; break;
 			case 's':
 				s = va_arg(va_list_Ptr, char *);
 				k = 1;
 				if (!s)
 				{
-					printf("(nil)"), break;
+					printf("(nil)"); break;
 				}
-				printf("%s", s), break;
+				printf("%s", s); break;
 		} i++;
 	}
 	printf("\n"), va_end(va_list_Ptr);
