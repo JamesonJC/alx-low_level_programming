@@ -32,7 +32,7 @@ list_t *add_node(list_t **head, const char *str)
 		ln++;
 
 	nextPtr->str = sPtr;
-	nextPtr->ln = ln;
+	nextPtr->len = ln;
 	nextPtr->next = *head;
 
 	*head = nextPtr;
