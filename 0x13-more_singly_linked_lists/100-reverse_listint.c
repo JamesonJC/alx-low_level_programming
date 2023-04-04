@@ -11,37 +11,17 @@ listint_t *reverse_listint(listint_t **head)
 {
 	listint_t *prev, *placeholder;
 
-	if (!head || !(*head))
-		return (NULL);
-
-	if (*head->next == NULL)
-		return (*head);
-
-	placeholder = *head;
 	prev = NULL;
+	placeholder = NULL;
 
-	while (1)
+	while (*head)
 	{
-		if (!prev)
-		{
-			prev = *placeholder;
-			placeholder = placeholder->next;
-			prev->next = NULL;
-			*placeholder = pre;
-		}
-		else
-		{
-			prev = *placeholder;
-			placeholder = prev->next;
-			prev->next = *placeholder;
-			if (!placeholder)
-			{
-				placeholder = prev;
-				break;
-			}
-			*head = prev;
-		}
+		placeholder = *head->next;
+		*head->next = prev;
+		prev = *head;
+		*head = placeholder;
 	}
-	*head = placeholder;
+	*head = prev;
+
 	return (*head);
 }
