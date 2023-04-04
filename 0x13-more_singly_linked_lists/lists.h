@@ -16,6 +16,8 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
+/* Prototyping */
 size_t print_listint(const listint_t *h);
+listint_t *reverse_listint(listint_t **head);
 
 #endif
