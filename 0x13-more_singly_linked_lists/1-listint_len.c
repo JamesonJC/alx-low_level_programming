@@ -2,17 +2,17 @@
 #include "lists.h"
 
 /**
- * print
- *
+ * listint_len - The number of elements of the list
+ * @h: Pointer to start
+ * Return: Total number of elements
  */
 
-size_t print_listint(const listint_t *h)
+size_t listint_len(const listint_t *h)
 {
 	size_t num = 0;
 
 	while (h != NULL)
 	{
-		printf("%d\n", h->n);
 		h = h->next;
 		num++;
 	}
