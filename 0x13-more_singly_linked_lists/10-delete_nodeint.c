@@ -3,7 +3,7 @@
 
 /**
  * delete_nodeint_at_index - Removes the node in the list
- * @head: Starting point of the list 
+ * @head: Starting point of the list
  * @index: The position of the node to be removed
  * Return: 1 if success or -1 on failure
  */
@@ -12,6 +12,9 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *placeholder, *prev;
 	unsigned int i = 0;
 
+	if (!*head)
+		return (-1);
+
 	if (index == 0)
 	{
 		placeholder = *head;
@@ -19,9 +22,6 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		free(placeholder);
 		return (1);
 	}
-
-	if (*head == NULL)
-		return (-1);
 
 	prev = *head;
 
