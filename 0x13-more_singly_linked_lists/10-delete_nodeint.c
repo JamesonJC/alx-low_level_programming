@@ -3,7 +3,7 @@
 
 /**
  * delete_nodeint_at_index - Removes the node in the list
- * @head: Start point of the list
+ * @head: Starting point of the list 
  * @index: The position of the node to be removed
  * Return: 1 if success or -1 on failure
  */
