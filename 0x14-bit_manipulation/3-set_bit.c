@@ -14,7 +14,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	/*
 	 * Setting the bit at the index to 1,
-	 * leaving all others unchaged, and returnig the 1
+	 * leaving all others unchaged
 	 */
 	*n = *n | 1 << index;
 
