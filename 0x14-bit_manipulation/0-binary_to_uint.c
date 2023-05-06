@@ -29,9 +29,6 @@ unsigned int binary_to_uint(const char *b)
 		/*Adding the base 10 value using base 2 multiple*/
 		if  (b[pos] == '1')
 			base10 += base;
-
-		else if (b[pos] != '1' && b[pos] != '0')
-			return (0);
 		base *= 2;
 	}
 
