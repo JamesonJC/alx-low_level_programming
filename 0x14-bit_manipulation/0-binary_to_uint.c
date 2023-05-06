@@ -22,10 +22,9 @@ unsigned int binary_to_uint(const char *b)
 	/*looping from the last char/bit in the string*/
 	for (pos = (ln - 1); pos >= 0; pos--)
 	{
-		/*Checking if the char is 0 or 1, return is if not
-		* if (b[pos] != '1' && b[pos] != '0')
-		*	return (0);
-		 */
+		/*Checking if the char is 0 or 1, return is if not*/
+		 if (b[pos] != '1' && b[pos] != '0')
+			 return (0);
 
 		/*Adding the base 10 value using base 2 multiple*/
 		if  (b[pos] == '1')
