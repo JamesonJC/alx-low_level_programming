@@ -23,8 +23,8 @@ int main(int argc, char *argv[])
 			addi_res = addi_res + atoi(argv[i]);
 		}
 
-		printf("%d\n", addi_res);
+		printf("%ld\n", addi_res);
 	} else
-		printf("%d\n", addi_res);
+		printf("%ld\n", addi_res);
 	return (0);
 }
