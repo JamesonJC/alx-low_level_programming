@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 			if (*argv[i] < '0' || *argv[i] > '9')
 			{
 				printf("Error\n");
-				return (0);
+				return (1);
 			}
 			addi_res = addi_res + atoi(argv[i]);
 		}
