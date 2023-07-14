@@ -13,11 +13,10 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int file;
-	ssize_t tot_char;
+	ssize_t file, tot_char;
 	char bf[1024 * 8];
 
-	if (filename == NULL || !letters)
+	if (!filename || !letters)
 		return (0);
 
 	file = open(filename, 'r');
