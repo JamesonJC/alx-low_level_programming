@@ -13,22 +13,23 @@
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	ssize_t file, bytes_r, bytes_w;
-	char *bf;
+	ssize_t file, tot_char;
+	char bf[1024 * 8];
 
 	file = open(filename, 'r');
-	if (filename == NULL || file == -1)
+	if (filename == NULL || file == -1 || !letters)
 	{
 		return (0);
 	}
 
 	bf = malloc(sizeof(char) * letters);
 
-	bytes_r = read(file, bf, letters);
+	tot_char = read(file, &bf[0], letters);
+	bf[bytes_r] = '\0';
 
-	bytes_w = write(1, bf, bytes_r);
+	tot_char = write(1, &bf[0], tot_char);
 
-	if (bytes_w == -1 || bytes_r == -1 || bytes_w != bytes_r || bf == NULL)
+	if (tot_char == -1 || bf == NULL)
 	{
 		close(file);
 		free(bf);
