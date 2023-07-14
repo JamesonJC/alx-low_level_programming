@@ -27,11 +27,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	tot_char = write(1, &bf[0], tot_char);
 
-	if (tot_char == -1 || bf == NULL)
-	{
-		close(file);
-		return (0);
-	}
 
 	close(file);
 	return (tot_char);
