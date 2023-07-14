@@ -22,21 +22,16 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	}
 
-	bf = malloc(sizeof(char) * letters);
-
 	tot_char = read(file, &bf[0], letters);
-	bf[bytes_r] = '\0';
 
 	tot_char = write(1, &bf[0], tot_char);
 
 	if (tot_char == -1 || bf == NULL)
 	{
 		close(file);
-		free(bf);
 		return (0);
 	}
 
 	close(file);
-	free(bf);
-	return (bytes_r);
+	return (tot_char);
 }
