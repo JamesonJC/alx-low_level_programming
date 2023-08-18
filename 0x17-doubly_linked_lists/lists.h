@@ -1,6 +1,9 @@
 #ifndef _LISTS_H_
 #define _LISTS_H_
 
+/*Predefined Libraries*/
+#include <stddef.h>
+
 /*Structure*/
 
 /**
