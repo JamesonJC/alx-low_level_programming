@@ -11,6 +11,7 @@
 hash_node_t *add(hash_node_t **head, const char *key, const char *value)
 {
 	hash_node_t *ptr;
+
 	ptr = *head;
 
 	while (ptr != NULL)
@@ -41,7 +42,7 @@ hash_node_t *add(hash_node_t **head, const char *key, const char *value)
    * @ht: pointer to the node in the hash table
    * @key: key of the value
    * @value: value inserted
-   * Return: 1 or 0 
+   * Return: 1 or 0
    */
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
